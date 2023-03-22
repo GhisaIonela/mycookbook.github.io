@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+        
+        <title>MyCookbook</title>
+        <link rel="stylesheet" href="upload_recipe.css">
+        <script src="https://kit.fontawesome.com/6f57b1fb42.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="js/upload_recipe.js" defer></script>
+    </head>
+    <body>
+        <div class="page_container">
+            <section class="side_bar_container">
+                <nav class="side_bar">
+                    <a href="home.html">
+                        <i class="fa-solid fa-bowl-food"></i>
+                        Home
+                    </a>
+                    <a href="cookbook_page.html">
+                        <i class="fa-solid fa-book"></i>
+                        Cookbook
+                    </a>
+                    <a class="active_icon" href="upload_recipe.html">
+                        <i class="fa-solid fa-square-plus"></i>
+                        Upload recipe
+                    </a>
+                    <a href="account.html">
+                        <i class="fa-solid fa-user"></i>
+                        Account
+                    </a>
+                </nav>
+            </section>
+            <section class="page_content_container" id="paper">
+                <div id="pattern">
+                    <header>
+                        <h1>New recipe</h1>
+                        <!--i class="fa-solid fa-pen"></i-->
+                    </header>
+                    
+                    <form>
+                        <div class="form_col">
+                            <label for="recipe_name">Name:</label>
+                            <input type="text" id="recipe_name" name="recipe_name">
+
+                            <label for="description">Description:</label>
+                            <span class="input" id="description" role="textbox" contenteditable style="width: 440px"></span>
+                            <label for="recipe_img">Select image:</label>
+                            <input type="file" id="recipe_img" name="recipe_img" accept="image/*">
+                            <img id="recipe_img_preview" class="recipe_img_preview" src="icons/image.png" alt="your image"/>
+                        </div>
+                        
+
+                        <div class="form_col">
+                            <label for="ingredients">Ingredients:</label>
+                            <div style="display: flex; flex-direction: row;">
+                                <input type="text" id="ingredient_input" name="ingredient_input">
+                                <i id='addIngredientBtn' class="fa-solid fa-square-plus" onclick="addIngredient()"></i>
+                            </div>
+
+                            <ul id="ingredient_list">
+                            </ul>
+                        </div>
+
+                        <div class="form_col">
+                            <label for="steps">Steps:</label>
+                            <div style="display: flex; flex-direction: row;">
+                                <textarea id="step_input" class="step_input" name="step_input" rows="4" cols="50"></textarea>
+                                <i id='addStepBtn' class="fa-solid fa-square-plus" onclick="addStep()"></i>
+                            </div>
+
+                            <ol id="step_list" class="step_list"> 
+                            </ol>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <script>
+            recipe_img.onchange = evt => {
+                const [file] = recipe_img.files
+                if (file) {
+                    recipe_img_preview.src = URL.createObjectURL(file)
+                }
+            }
+        </script>
+    </body>
+</html>

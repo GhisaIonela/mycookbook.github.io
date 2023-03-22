@@ -1,0 +1,180 @@
+@import url(base_page_layout.css);
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 20px 20px 100px;
+    text-align: center;
+    font-size: 20px;
+    background: url(images/home_header.jpg), hsl(var(--accent-hsl));
+    background-position: top;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    color: hsl(var(--primary-dark-hsl));
+}
+
+header h1 {
+    font-family: "Brush Script MT";
+    font-size: 50px;
+    text-align: left;
+    padding: 10px;
+    text-decoration: underline solid hsl(var(--accent-light-hsl));
+}
+
+header i {
+    margin-left: 10px;
+}
+
+
+/* styling paper */
+#paper {
+    position: relative;
+    margin: 20px auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px #888;
+}
+  
+  /* styling red vertical line */
+#paper::before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    background-color: rgba(255,0,0,0.6);
+}
+  
+/* styling blue horizontal lines */
+#pattern {
+    height: 100%;
+    background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px);
+}
+  
+/* styling text content */
+#content {
+    padding-top: 6px;
+    padding-left: 56px;
+    padding-right: 16px;
+    line-height: 25px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 19px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.recipe_img_preview {
+    width: 440px;
+    height: auto;
+    background-position: center; 
+    background-size: cover;
+}
+
+label {
+    font-family: 'Dancing Script', cursive;
+    font-size: large;
+    text-decoration: 2px underline;
+    text-decoration-color: hsl(var(--secondary-light-hsl));
+}
+
+.form_col {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 650px;
+    padding: 30px;
+    overflow-y: visible;
+}
+
+.form_col input {
+    font-size: 20px;
+}
+
+.form_col input {
+    background-color: transparent;
+    border-top-color: black;
+}
+
+.form_col span {
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+.addIngredientBtn {
+    width: 50px;
+    height: auto;
+}
+
+
+.addStepBtn {
+    width: 50px;
+    height: auto;
+}
+
+.ingredient_list {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ingredient_list li {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+.step_input {
+    background-color: transparent;
+    border: 2px solid black;
+    resize: none;
+    font-family: 'Dancing Script', cursive;
+    font-size: large;
+}
+
+.step_list {
+    list-style-type: decimal;
+    width: 400px;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.step {
+    font-family: 'Dancing Script', cursive;
+    font-size: large;
+    word-wrap: break-word;
+}
+
+.remove_icon {
+    padding: 2px;
+    width: 20px;
+    height: auto;
+}
+
+.remove_icon:hover {
+    filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(180deg);
+}
+
+/* .step img {
+    padding: 2px;
+    margin-left: 5px;
+    width: 20px;
+    height: auto;
+}
+
+.step img:hover {
+    filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(180deg);
+} */

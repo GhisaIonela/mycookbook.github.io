@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=0.5">
+
+        <title>MyCookbook</title>
+        <link rel="stylesheet" href="home.css">
+        <script src="https://kit.fontawesome.com/6f57b1fb42.js" crossorigin="anonymous"></script>
+        <script src="js/home.js" defer></script>
+    </head>
+    <body>
+        <div class="page_container">
+            <div class="side_bar_container">
+                <nav class="side_bar">
+                    <a class="active_icon" href="home.html">
+                        <i class="fa-solid fa-bowl-food"></i>
+                        Home
+                    </a>
+                    <a href="cookbook_page.html">
+                        <i class="fa-solid fa-book"></i>
+                        Cookbook
+                    </a>
+                    <a href="upload_recipe.html">
+                        <i class="fa-solid fa-square-plus"></i>
+                        Upload recipe
+                    </a>
+                    <a href="account.html">
+                        <i class="fa-solid fa-user"></i>
+                        Account
+                    </a>
+                </nav>
+            </div>
+            <div class="page_content_container">
+                <header>
+                    <h1>My cookbook</h1>
+                    <p>Start cooking</p>
+                    <div class="search_bar">
+                        <input type="text" placeholder="search for recipe...">
+                        <button type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </header>
+                <div class="preferences_container">
+                        <h2>Preferences</h2>
+                        <div class="categories_container" id="categories_container">
+                        </div>
+                        <div class="search_preferences">
+                            <div class="dropdown">
+                                <button class="dropdown_button">
+                                    <i class="fa-solid fa-list-check"></i>
+                                </button>
+                                <div class="dropdown-options" id="dropdown_options">
+                                </div>
+                            </div>
+                        </div>
+           
+                        <button class="remove_preference_toggle_inactive" id="remove_preference_toggle" onclick="toggle_delete_preference()">
+                            <i class="fa-solid fa-filter-circle-xmark"></i>
+                        </button>
+                </div>
+                <div id="filtered_items">
+                    unfiltered
+                </div>
+                <!--div class="most_popular_recipes_container">
+                    <h1>Most popular</h3>
+                    <div class="most_popular_recipes_cards_container">
+                        <div class="a">
+                            <img src="dataset/3-ingredient-curried-chicken-thighs.jpg">
+                            <h2>Curried chicken thighs</h2>
+                        </div>
+                        <div class="b">
+                            <div class="b2">
+                                <img src="dataset/3-ingredient-curried-chicken-thighs.jpg">
+                                <h2>Curried chicken thighs</h2>
+                            </div>
+                            <div class="b2">
+                                <img src="dataset/3-ingredient-curried-chicken-thighs.jpg">
+                                <h2>Curried chicken thighs</h2>
+                            </div>
+                        </div>
+                        <div class="b">
+                            <div class="b2">
+                                <img src="dataset/3-ingredient-curried-chicken-thighs.jpg">
+                                <h2>Curried chicken thighs</h2>
+                            </div>
+                            <div class="b2">
+                                <img src="dataset/3-ingredient-curried-chicken-thighs.jpg">
+                                <h2>Curried chicken thighs</h2>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div-->
+            </div>
+        </div>
+    </body>
+</html>

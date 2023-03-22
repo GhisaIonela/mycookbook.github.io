@@ -1,0 +1,112 @@
+{
+    "category_chicken": {
+        "id": "category_chicken",
+        "category": "chicken",
+        "onclick": "filter(this)",
+        "img": {
+            "src": "icons/chicken.png",
+            "alt": "category_chicken"
+        },
+        "selected": "true"
+    },
+    "category_pork": {
+        "id": "category_pork",
+        "category": "pork",
+        "onclick": "filter(this)",
+        "img": {
+            "src": "icons/pig.png",
+            "alt": "category_pork"
+        },
+        "selected": "true"
+    },
+    "category_seafood": {
+        "id": "category_seafood",
+        "category": "seafood",
+        "onclick": "filter(this)",
+        "img": {
+            "src": "icons/seafood.png",
+            "alt": "category_seafood"
+        },
+        "selected": "true"
+    },
+    "category_dairy": {
+        "id": "category_dairy",
+        "category": "dairy",
+        "onclick": "filter(this)",
+        "img": {
+            "src": "icons/dairy-products.png",
+            "alt": "category_dairy"
+        },
+        "selected": "true"
+    },
+    "category_eggs": {
+        "id": "category_eggs",
+        "category": "eggs",
+        "onclick": "filter(this)",
+        "img": {
+            "src": "icons/eggs.png",
+            "alt": "category_eggs"
+        },
+        "selected": "true"
+    },
+    "category_pasta": {
+        "id": "category_pasta",
+        "category": "pasta",
+        "onclick": "filter(this)",
+        "img": {
+            "src": "icons/spaghetti.png",
+            "alt": "category_pasta"
+        },
+        "selected": "true"
+    },
+    "category_rice": {
+        "id": "category_rice",
+        "category": "rice",
+        "onclick": "filter(this)",
+        "img": {
+            "src": "icons/rice.png",
+            "alt": "category_rice"
+        },
+        "selected": "true"
+    },
+    "category_nuts": {
+        "id": "category_nuts",
+        "category": "nuts",
+        "onclick": "filter(this)",
+        "img": {
+            "src": "icons/nuts.png",
+            "alt": "category_nuts"
+        },
+        "selected": "true"
+    },
+    "category_legumes": {
+        "id": "category_legumes",
+        "category": "legumes",
+        "onclick": "filter(this)",
+        "img": {
+            "src": "icons/vegetable.png",
+            "alt": "category_legumes"
+        },
+        "selected": "true"
+    },
+    "category_fruits": {
+        "id": "category_fruits",
+        "category": "fruits",
+        "onclick": "filter(this)",
+        "img": {
+            "src": "icons/fruits.png",
+            "alt": "category_fruits"
+        },
+        "selected": "false"
+    },
+    "category_dessert": {
+        "id": "category_dessert",
+        "category": "dessert",
+        "onclick": "filter(this)",
+        "img": {
+            "src": "icons/panna-cotta.png",
+            "alt": "category_dessert"
+        },
+        "selected": "false"
+    }
+}

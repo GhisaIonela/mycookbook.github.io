@@ -1,0 +1,19 @@
+:root {
+    --primary-light-hsl: 28, 32%, 88%;
+    --primary-dark-hsl: 200, 100%, 6%; 
+    --primary-neutral-hsl: 39, 15%, 65%;
+
+    --secondary-light-hsl: 168, 60%, 63%;
+    --secondary-dark-hsl: 170, 61%, 39%;
+
+    --dark-hsl:30, 13%, 16%;
+
+    --light-tint-hsl: 34, 29%, 81%;
+    --dark-tint-hsl: 17, 37%, 35%;
+
+    --success-hsl: 100, 60%, 50%;
+    --error-hsl: 0, 60%, 50%;
+
+    --accent-hsl: 355, 40%, 71%;
+    --accent-light-hsl: 41, 99%, 80%;
+}
